@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <button class="snap_logo_mobile">
+                <img src="/images/logo.svg" alt="" />
+            </button>
+            <button class="header_mobile_menu">
+                <img
+                    src="images/icon-menu.svg"
+                    alt=""
+                    class="header_mobile_menu_icon"
+                />
+            </button>
+
+            <div class="header_left">
+                <button class="snap_logo">
+                    <img src="/images/logo.svg" alt="" class="header_snap" />
+                </button>
+                <button class="features_button">
+                    Features
+                    <img
+                        src="/images/icon-arrow-down.svg"
+                        alt=" "
+                        class="features_arrow_down"
+                    />
+                    <img
+                        src="/images/icon-arrow-up.svg"
+                        alt=""
+                        class="features_arrow_up hidden"
+                    />
+                    <div class="header_features_menu hidden">
+                        <ul class="features_list">
+                            <li>
+                                <div class="features_list_img" id="todolist">
+                                    <img src="/images/icon-todo.svg" alt="" />
+                                </div>
+                                <span>Todo list</span>
+                            </li>
+                            <li>
+                                <div class="features_list_img" id="calendar">
+                                    <img
+                                        src="/images/icon-calendar.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <span>Calendar</span>
+                            </li>
+                            <li>
+                                <div class="features_list_img" id="remainer">
+                                    <img
+                                        src="/images/icon-reminders.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <span>Reminders</span>
+                            </li>
+                            <li>
+                                <div class="features_list_img" id="planning">
+                                    <img
+                                        src="/images/icon-planning.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <span> Planning</span>
+                            </li>
+                        </ul>
+                    </div>
+                </button>
+                <button class="company_button">
+                    Company
+                    <img
+                        src="/images/icon-arrow-down.svg"
+                        alt=" "
+                        class="company_arrow_down"
+                    />
+                    <img
+                        src="/images/icon-arrow-up.svg"
+                        alt=""
+                        class="company_arrow_up hidden"
+                    />
+                    <div class="header_company_menu hidden">
+                        <ul class="company_list">
+                            <li>History</li>
+                            <li>Our Team</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                </button>
+                <button>Careers</button>
+                <button>About</button>
+            </div>
+            <div class="header_right">
+                <button id="login_button">Login</button>
+                <button id="register_button">Register</button>
+            </div>
+        </header>
+        <main>
+            <section class="main_img_mobile">
+                <img
+                    src="images/image-hero-mobile.png"
+                    alt=""
+                    class="mobile_img"
+                />
+            </section>
+            <section class="main_section">
+                <h1>
+                    Make <br />
+                    remote work
+                </h1>
+                <p class="main_section_paragraph">
+                    Get your team in sync, no matter your location. Streamline
+                    processes, create team rituals, and watch productivity soar.
+                </p>
+                <button class="main_learn_more_button">Learn more</button>
+            </section>
+            <section class="main_img">
+                <img
+                    src="/images/image-hero-desktop.png"
+                    alt="a man with a notebook"
+                />
+            </section>
+
+            <section class="main_links">
+                <button class="databiz_link">
+                    <img src="/images/client-databiz.svg" alt="databiz link" />
+                </button>
+                <button class="audiophile_link">
+                    <img
+                        src="/images/client-audiophile.svg"
+                        alt="audiophile link"
+                    />
+                </button>
+                <button class="meet_link">
+                    <img src="/images/client-meet.svg" alt="meet link" />
+                </button>
+                <button class="maker_link">
+                    <img src="/images/client-maker.svg" alt="maker link" />
+                </button>
+            </section>
+        </main>
+
+        <footer class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">Your Name Here</a>.
+        </footer>
+        <script src="app.js"></script>
+    </body>
+</html>

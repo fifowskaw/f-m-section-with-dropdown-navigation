@@ -1,0 +1,334 @@
+:root {
+    --color-almost-white: hsl(0, 0%, 98%);
+    --color-shadow: rgba(128, 128, 128, 0.5);
+    --color-grey: hsl(0, 0%, 41%);
+    --color-almost-black: hsl(0, 0%, 8%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    font-family: "Epilogue", sans-serif;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    margin-top: 15px;
+    margin-left: -25px;
+    width: 90%;
+
+    height: 12%;
+    min-height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.snap_logo_mobile {
+    display: none;
+}
+.header_mobile_menu {
+    display: none;
+}
+
+header button {
+    transition: color 0.3s;
+}
+header button:hover {
+    color: var(--color-almost-black);
+}
+
+.header_left {
+    width: 550px;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_left button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    width: 80px;
+    height: 50%;
+
+    color: var(--color-grey);
+    font-weight: 700;
+}
+.feature_button {
+    position: relative;
+}
+
+.header_features_menu,
+.header_company_menu {
+    position: absolute;
+}
+.header_features_menu {
+    z-index: 3;
+    top: 75px;
+    left: 70px;
+
+    width: 130px;
+    height: 150px;
+    background-color: var(--color-almost-white);
+    border-radius: 10px;
+    box-shadow: 3px 10px 30px var(--color-shadow);
+}
+.header_features_menu:hover {
+    color: var(--color-grey);
+}
+header button:hover .header_features_menu,
+header button:hover .header_company_menu {
+    color: var(--color-grey);
+    transition: color 0s !important;
+}
+
+.features_list {
+    margin-top: 12.5px;
+    list-style-type: none;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.features_list li {
+    display: flex;
+}
+.features_list li span {
+    padding-left: 20px;
+}
+.features_list_img {
+    width: 17px;
+    height: 17px;
+    padding-top: 2px;
+    padding-left: 15px;
+}
+.features_list_img img {
+    aspect-ratio: 1/1;
+}
+.header_company_menu {
+    z-index: 3;
+    top: 75px;
+    left: 230px;
+
+    width: 110px;
+    height: 120px;
+    background-color: var(--color-almost-white);
+    border-radius: 10px;
+    box-shadow: 3px 10px 30px var(--color-shadow);
+}
+.company_list {
+    margin-top: 12.5px;
+    padding-left: 20px;
+    list-style-type: none;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header_right {
+    margin-right: 0;
+    width: 220px;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_right button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: var(--color-grey);
+    font-weight: 700;
+
+    width: 50%;
+    height: 40%;
+}
+#register_button {
+    border: solid 2px var(--color-grey);
+    border-radius: 15px;
+    transition: border 0.3s;
+}
+#register_button:hover {
+    border: solid 2px var(--color-almost-black);
+}
+
+main {
+    position: relative;
+    width: 80%;
+    height: 568.312px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.main_section {
+    margin-left: 50px;
+    width: 55%;
+    min-width: 400px;
+    max-width: 500px;
+    height: 100%;
+}
+h1 {
+    margin-top: 75px;
+    padding-right: 50px;
+    font-size: 60px;
+}
+.main_section_paragraph {
+    padding-right: 75px;
+    padding-left: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    line-height: 25px;
+
+    color: var(--color-grey);
+    font-size: 20px;
+}
+.main_learn_more_button {
+    cursor: pointer;
+    background-color: var(--color-almost-black);
+    border: none;
+    border-radius: 15px;
+    width: 25%;
+    height: 50px;
+    color: var(--color-almost-white);
+    font-weight: 700;
+
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+.main_learn_more_button:hover {
+    border: solid 1px var(--color-almost-black);
+    background-color: var(--color-almost-white);
+    color: var(--color-almost-black);
+}
+
+.main_img {
+    width: 400px;
+}
+.main_img img {
+    width: 100%;
+    aspect-ratio: 960 / 1280;
+    min-width: 400px;
+}
+.main_img_mobile {
+    display: none;
+}
+.main_links {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+}
+.main_links button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    margin-right: 20px;
+}
+button {
+    font-family: "Epilogue", sans-serif;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        position: static;
+    }
+    .header_left {
+        display: none;
+    }
+    .header_right {
+        display: none;
+    }
+    .snap_logo_mobile {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        width: 220px;
+        height: 40px;
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+    .snap_logo_mobile img {
+        width: 150px;
+        height: 40px;
+    }
+    .header_mobile_menu {
+        z-index: 5;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+
+        width: 50px;
+        height: 50px;
+        display: block;
+
+        background-color: transparent;
+        border: none;
+    }
+    .snap_logo {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+    .main_img_mobile {
+        display: block;
+        margin-top: 140px;
+        width: 100%;
+    }
+    .main_img_mobile img {
+        width: 100%;
+        aspect-ratio: 750 / 564;
+    }
+    .main_img {
+        display: none;
+    }
+    .main_section {
+        text-align: center;
+    }
+    .main_learn_more_button {
+        width: 45%;
+        height: 75px;
+        font-size: 22px;
+    }
+    .main_links {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .main_links button {
+        transform: scale(80%, 80%);
+    }
+    footer {
+        display: none;
+    }
+    .hidden {
+        display: none;
+    }
+}
